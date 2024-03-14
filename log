@@ -15,3 +15,15 @@ exercises.c:27:1: error: control reaches end of non-void function [-Werror=retur
 cc1: all warnings being treated as errors
 Compilation failed
 7097c98
+Thu 14 Mar 2024 08:47:20 PM UTC: 
+ exercises.c | 4 ++--
+ 1 file changed, 2 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘findMax’:
+exercises.c:18:9: error: ‘max’ undeclared (first use in this function); did you mean ‘fmax’?
+   18 |         max = arr[i];
+      |         ^~~
+      |         fmax
+exercises.c:18:9: note: each undeclared identifier is reported only once for each function it appears in
+Compilation failed
+4278ca5
