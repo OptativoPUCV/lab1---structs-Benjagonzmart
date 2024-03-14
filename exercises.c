@@ -71,15 +71,8 @@ int *filterEvenNumbers(int arr[], int size, int *newSize)
       newArr[j++] = arr[i];
   *newSize = contador;
   return newArr;
-  
 
   
-
-
-
-
-  
-  return NULL;
 }
 
 /*
