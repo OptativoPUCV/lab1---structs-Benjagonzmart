@@ -37,9 +37,6 @@ void reverseArray(int arr[], int size)
   
   while (i < j)
     {
-      
-    
-   
       int temp = arr[i];
       arr[i] = arr[size - i - 1];
       arr[size - i - 1] = temp;
@@ -60,7 +57,30 @@ los números pares del arreglo original.
 newsize apunta a una dirección válida que no ha sido inicializada con nigún valor específico. 
 *newsize debe almacenar el tamaño del nuevo arreglo que se retorna.
 */
-int *filterEvenNumbers(int arr[], int size, int *newSize) { return NULL; }
+int *filterEvenNumbers(int arr[], int size, int *newSize) 
+{
+  int contador = 0;
+  for (int i = 0; i < size; i++)
+    if (arr[i] % 2 == 0)
+      contador++;
+  int *newArr = (int *)malloc(contador * sizeof(int));
+  if (newArr == NULL) exit(EXIT_FAILURE);
+  int j = 0;
+  for (int i = 0; i < size; i++)
+    if (arr[i] % 2 == 0)
+      newArr[j++] = arr[i];
+  *newSize = contador;
+  return newArr;
+  
+
+  
+
+
+
+
+  
+  return NULL;
+}
 
 /*
 Ejercicio 4: Fusión de dos Arreglos Ordenados
