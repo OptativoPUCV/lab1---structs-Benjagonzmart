@@ -134,3 +134,13 @@ Thu 14 Mar 2024 09:09:20 PM UTC:
  tests:  0|4
 total_score: 30/70
 d0f09ea
+Thu 14 Mar 2024 09:18:38 PM UTC: 
+ exercises.c | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘mergeSortedArrays’:
+exercises.c:94:5: error: expected expression before ‘}’ token
+   94 |     }
+      |     ^
+Compilation failed
+0ab057a
