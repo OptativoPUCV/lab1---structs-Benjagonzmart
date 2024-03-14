@@ -78,3 +78,20 @@ exercises.c:38:9: note: each undeclared identifier is reported only once for eac
 cc1: all warnings being treated as errors
 Compilation failed
 9431853
+Thu 14 Mar 2024 08:59:19 PM UTC: 
+ exercises.c | 9 +++++++++
+ 1 file changed, 9 insertions(+)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:42:5: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+   42 |     for (int i = 0; i < size / 2; i++)
+      |     ^~~
+exercises.c:44:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   44 |       arr[i] = arr[size - i - 1];
+      |       ^~~
+exercises.c:45:25: error: ‘temp’ may be used uninitialized in this function [-Werror=maybe-uninitialized]
+   45 |       arr[size - i - 1] = temp;
+      |       ~~~~~~~~~~~~~~~~~~^~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+caec78c
