@@ -95,3 +95,24 @@ exercises.c:45:25: error: ‘temp’ may be used uninitialized in this function 
 cc1: all warnings being treated as errors
 Compilation failed
 caec78c
+Thu 14 Mar 2024 08:59:54 PM UTC: 
+ exercises.c | 3 +--
+ 1 file changed, 1 insertion(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:42:7: error: expected expression before ‘int’
+   42 |       int temp = arr[i];
+      |       ^~~
+exercises.c:41:5: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+   41 |     for (int i = 0; i < size / 2; i++)
+      |     ^~~
+exercises.c:43:7: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   43 |       arr[i] = arr[size - i - 1];
+      |       ^~~
+exercises.c:44:27: error: ‘temp’ undeclared (first use in this function)
+   44 |       arr[size - i - 1] = temp;
+      |                           ^~~~
+exercises.c:44:27: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+138f602
