@@ -60,3 +60,21 @@ exercises.c:35:7: error: variable ‘temp’ set but not used [-Werror=unused-bu
 cc1: all warnings being treated as errors
 Compilation failed
 ce9df71
+Thu 14 Mar 2024 08:55:24 PM UTC: 
+ exercises.c | 1 +
+ 1 file changed, 1 insertion(+)
+In file included from test.c:1:
+exercises.c: In function ‘reverseArray’:
+exercises.c:36:3: error: this ‘for’ clause does not guard... [-Werror=misleading-indentation]
+   36 |   for (int i = 0; i < size / 2; i++)
+      |   ^~~
+exercises.c:38:5: note: ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘for’
+   38 |     arr[i] = arr[size - i - 1];
+      |     ^~~
+exercises.c:38:9: error: ‘i’ undeclared (first use in this function)
+   38 |     arr[i] = arr[size - i - 1];
+      |         ^
+exercises.c:38:9: note: each undeclared identifier is reported only once for each function it appears in
+cc1: all warnings being treated as errors
+Compilation failed
+9431853
