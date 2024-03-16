@@ -144,3 +144,67 @@ exercises.c:94:5: error: expected expression before ‘}’ token
       |     ^
 Compilation failed
 0ab057a
+Thu 14 Mar 2024 09:19:05 PM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Thu 14 Mar 2024 09:19:15 PM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Sat 16 Mar 2024 04:09:18 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Sat 16 Mar 2024 04:09:32 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Sat 16 Mar 2024 04:09:41 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Sat 16 Mar 2024 04:10:03 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Sat 16 Mar 2024 04:13:53 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Sat 16 Mar 2024 04:14:12 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Sat 16 Mar 2024 04:17:10 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Sat 16 Mar 2024 04:18:00 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Sat 16 Mar 2024 04:18:06 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Sat 16 Mar 2024 04:18:29 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Sat 16 Mar 2024 04:25:34 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Sat 16 Mar 2024 04:25:57 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Sat 16 Mar 2024 04:26:18 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Sat 16 Mar 2024 04:26:26 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Sat 16 Mar 2024 04:29:15 AM UTC: 
+ exercises.c | 2 ++
+ 1 file changed, 2 insertions(+)
+Sat 16 Mar 2024 04:31:37 AM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c:74:3: error: expected ‘;’ before ‘void’
+   74 | }d
+      |   ^
+      |   ;
+......
+   82 | void mergeSortedArrays(int arr1[], int size1, int arr2[], int size2,
+      | ~~~~
+Compilation failed
+32be2f6
