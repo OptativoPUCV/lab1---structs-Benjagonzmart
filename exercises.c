@@ -175,10 +175,10 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
   libro->autor.anioNacimiento = anioNacimiento;
   libro->anioPublicacion = anioPublicacion;
 
-}
+
  
-int main()
-{
+
+
   Libro libro1;
   inicializarLibro(&libro1, "El Gran Gatsby", "F. Scott Fitz" ,1925, 1925);
   

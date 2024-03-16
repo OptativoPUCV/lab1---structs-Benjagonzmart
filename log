@@ -472,3 +472,17 @@ exercises.c:180:5: note: previous definition of ‘main’ with type ‘int()’
       |     ^~~~
 Compilation failed
 2fb3589
+Sat 16 Mar 2024 07:09:39 PM UTC: 
+ exercises.c | 6 +++---
+ 1 file changed, 3 insertions(+), 3 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:190:10: error: ‘return’ with a value, in function returning void [-Werror=return-type]
+  190 |   return 0;
+      |          ^
+exercises.c:169:6: note: declared here
+  169 | void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
+      |      ^~~~~~~~~~~~~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+93cfcac
