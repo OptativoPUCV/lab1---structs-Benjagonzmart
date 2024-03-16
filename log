@@ -392,3 +392,53 @@ exercises.c:178:7: error: ‘main’ defined but not used [-Werror=unused-functi
 cc1: all warnings being treated as errors
 Compilation failed
 b58845d
+Sat 16 Mar 2024 07:07:09 PM UTC: 
+ exercises.c | 4 +++-
+ 1 file changed, 3 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘main’:
+exercises.c:183:49: error: missing terminating " character [-Werror]
+  183 |     inicializarLibro(&libro1, "El Gran Gatsby", "F. Scott Fitz ,1925, 1925););
+      |                                                 ^
+exercises.c:183:49: error: missing terminating " character
+  183 |     inicializarLibro(&libro1, "El Gran Gatsby", "F. Scott Fitz ,1925, 1925););
+      |                                                 ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+exercises.c:184:42: error: expected ‘)’ before ‘;’ token
+  184 |     printf("Título: %s\n", libro1.titulo);
+      |                                          ^
+      |                                          )
+exercises.c:183:21: note: to match this ‘(’
+  183 |     inicializarLibro(&libro1, "El Gran Gatsby", "F. Scott Fitz ,1925, 1925););
+      |                     ^
+exercises.c:184:5: error: passing argument 3 of ‘inicializarLibro’ makes pointer from integer without a cast [-Werror=int-conversion]
+  184 |     printf("Título: %s\n", libro1.titulo);
+      |     ^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      |     |
+      |     int
+exercises.c:169:69: note: expected ‘const char *’ but argument is of type ‘int’
+  169 | void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
+      |                                                         ~~~~~~~~~~~~^~~~~~~~~~~
+exercises.c:183:5: error: too few arguments to function ‘inicializarLibro’
+  183 |     inicializarLibro(&libro1, "El Gran Gatsby", "F. Scott Fitz ,1925, 1925););
+      |     ^~~~~~~~~~~~~~~~
+exercises.c:169:6: note: declared here
+  169 | void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
+      |      ^~~~~~~~~~~~~~~~
+exercises.c:188:14: error: expected ‘;’ before ‘}’ token
+  188 |     return 0;
+      |              ^
+      |              ;
+......
+  191 |   }
+      |   ~           
+test.c: At top level:
+test.c:382:5: error: redefinition of ‘main’
+  382 | int main(int argc, char *argv[]) {
+      |     ^~~~
+In file included from test.c:1:
+exercises.c:180:7: note: previous definition of ‘main’ with type ‘int()’
+  180 |   int main()
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+6acf485
