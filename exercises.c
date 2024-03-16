@@ -177,19 +177,19 @@ void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
 
 }
  
-  int main()
-  {
-    Libro libro1;
-    inicializarLibro(&libro1, "El Gran Gatsby", "F. Scott Fitz ,1925, 1925););
-    printf("Título: %s\n", libro1.titulo);
-    printf("Autor: %s\n", libro1.autor.nombre);
-    printf("Año de Nacimiento: %d\n", libro1.autor.anioN);
-    printf("Año de Publicación: %d\n", libro1.anioPublicacion);
-    return 0;
-    
-      
-  }
+int main()
+{
+  Libro libro1;
+  inicializarLibro(&libro1, "El Gran Gatsby", "F. Scott Fitz" ,1925, 1925);
+  printf("Título: %s\n", libro1.titulo);
+  printf("Autor: %s\n", libro1.autor.nombre);
+  printf("Año de Nacimiento: %d\n", libro1.autor.anioN);
+  printf("Año de Publicación: %d\n", libro1.anioPublicacion);
+  return 0;
   
+    
+}
+
 
   
 
