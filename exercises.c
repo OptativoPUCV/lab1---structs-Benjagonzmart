@@ -144,7 +144,8 @@ int checkSorted(int arr[], int size)
   return 0;
   
   
-  return -2; 
+  
+  
 }
 
 /*
