@@ -317,3 +317,28 @@ Sat 16 Mar 2024 06:55:14 PM UTC:
  tests:  0|1
 total_score: 60/70
 a4f8a20
+Sat 16 Mar 2024 07:05:00 PM UTC: 
+ exercises.c | 24 +++++++++++++++++++++++-
+ 1 file changed, 23 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘inicializarLibro’:
+exercises.c:177:7: error: ‘main’ is normally a non-static function [-Werror=main]
+  177 |   int main()
+      |       ^~~~
+exercises.c: In function ‘main’:
+exercises.c:180:5: error: too few arguments to function ‘inicializarLibro’
+  180 |     inicializarLibro(&libro1, "El Gran Gatsby", "F. Scott Fitz");
+      |     ^~~~~~~~~~~~~~~~
+exercises.c:169:6: note: declared here
+  169 | void inicializarLibro(Libro *libro, const char *titulo, const char *nombreAutor,
+      |      ^~~~~~~~~~~~~~~~
+exercises.c:183:51: error: ‘Autor’ has no member named ‘anioN’
+  183 |     printf("Año de Nacimiento: %d\n", libro1.autor.anioN);
+      |                                                   ^
+At top level:
+exercises.c:177:7: error: ‘main’ defined but not used [-Werror=unused-function]
+  177 |   int main()
+      |       ^~~~
+cc1: all warnings being treated as errors
+Compilation failed
+0c17cf7
