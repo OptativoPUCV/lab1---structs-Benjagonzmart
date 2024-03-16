@@ -223,3 +223,20 @@ Sat 16 Mar 2024 04:33:32 AM UTC:
  tests:  0|3
 total_score: 40/70
 87b76fd
+Sat 16 Mar 2024 04:40:00 AM UTC: 
+ exercises.c | 20 ++++++++++++++++++--
+ 1 file changed, 18 insertions(+), 2 deletions(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:178:13: error: unused variable ‘nuevoNodo’ [-Werror=unused-variable]
+  178 |       Nodo *nuevoNodo = (Nodo *)malloc(sizeof(Nodo));
+      |             ^~~~~~~~~
+exercises.c:175:9: error: unused variable ‘ultimo’ [-Werror=unused-variable]
+  175 |   Nodo *ultimo = NULL;
+      |         ^~~~~~
+exercises.c:174:9: error: unused variable ‘lista’ [-Werror=unused-variable]
+  174 |   Nodo *lista = NULL;
+      |         ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+15e55b4
