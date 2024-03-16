@@ -255,3 +255,20 @@ exercises.c:171:1: error: control reaches end of non-void function [-Werror=retu
 cc1: all warnings being treated as errors
 Compilation failed
 956bbd9
+Sat 16 Mar 2024 04:41:50 AM UTC: 
+ exercises.c | 18 +++++++++++++++++-
+ 1 file changed, 17 insertions(+), 1 deletion(-)
+In file included from test.c:1:
+exercises.c: In function ‘crearListaEnlazada’:
+exercises.c:184:13: error: unused variable ‘nuevoNodo’ [-Werror=unused-variable]
+  184 |       Nodo *nuevoNodo = (Nodo *)malloc(sizeof(Nodo));
+      |             ^~~~~~~~~
+exercises.c:181:9: error: unused variable ‘ultimo’ [-Werror=unused-variable]
+  181 |   Nodo *ultimo = NULL;
+      |         ^~~~~~
+exercises.c:180:9: error: unused variable ‘lista’ [-Werror=unused-variable]
+  180 |   Nodo *lista = NULL;
+      |         ^~~~~
+cc1: all warnings being treated as errors
+Compilation failed
+9c6795c
